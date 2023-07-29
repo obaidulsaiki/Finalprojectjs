@@ -96,6 +96,9 @@ function showAdmin(params) {
     adminSection.style.display = "block";
     nameChange();
   }
+  else {
+    alert("Wrong credentials");
+  }
   cancelBtn.addEventListener("click", hideAdmin);
 }
 AdminButton.addEventListener("click", showAdmin);
