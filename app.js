@@ -164,7 +164,7 @@ function searchCheck(lolvox) {
     items.innerHTML = "";
     menuItems.forEach(function (params) {
       if (
-        params.name.toLowerCase().includes(searchValue.toLowerCase()) &&
+        params.name.toLowerCase().trim().includes(searchValue.toLowerCase().trim()) &&
         lolvox == "All"
       ) {
         items.innerHTML += menuItemToShow(params);
