@@ -1,4 +1,3 @@
-// Your solution goes here
 // API -> https://64b2e33138e74e386d55b072.mockapi.io/api/hanover
 //menu objects
 const menuItems = [];
@@ -62,7 +61,6 @@ function renderMenu() {
   });
   incdinc();
 }
-//fetching data from api--------------------------------
 //fetching data from api--------------------------------
 async function getMenus() {
   items.innerHTML = "loading...";
@@ -180,6 +178,7 @@ function searchCheck(lolvox) {
     if (notFoundMesseg == 0) {
       items.innerHTML = "No item found";
     }
+    incdinc();
   });
 }
 searchCheck("All");
@@ -198,6 +197,7 @@ coffee.addEventListener("click", function () {
     }
     searchCheck("coffee");
   });
+  incdinc();
 });
 burger.addEventListener("click", function () {
   items.innerHTML = "";
@@ -205,6 +205,7 @@ burger.addEventListener("click", function () {
     if (params.type == "burger") {
       items.innerHTML += menuItemToShow(params);
     }
+    searchCheck("burger");
   });
-  searchCheck("burger");
+  incdinc();
 });
