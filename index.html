@@ -1,7 +1,3 @@
-<!-- 
-    DO NOT CHANGE HTML TEMPLATE. WORK WITH THE GIVEN STRUCTURE.
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,12 +33,6 @@
         <!-- Logo -->
         <div class="logo brand-f fs-2">HanOver</div>
         <!-- Cart container -->
-        <!-- 
-            Chart task: [TASK]
-
-            -> If the user presses "Add to Cart" button the #cart_counter will increase by 1.
-            -> If the user presses #cart_dec than the chart count will decrease by 1. Make sure the cart count should not get below 0. (!important).
-         -->
         <div
           class="bg-light text-dark d-flex align-items-center p-1"
           id="iits-cart"
@@ -63,12 +53,6 @@
         <!-- Search box -->
         <section class="px-2 w-100" id="searchSection">
           <h1 class="text-center brand-f">Search your fuel</h1>
-          <!-- 
-            Search bar task: [TASK]
-
-            -> If the user submits the form #items will only contain item thats name matches the search value.
-
-           -->
           <form class="d-flex gap-2 m-auto my-4" id="searchForm">
             <input
               type="text"
@@ -82,14 +66,6 @@
             Sip, savor, repeat at HanOver Cafe
           </p>
         </section>
-        <!-- Add new item section -->
-        <!-- 
-            Add new item section: [TASK]
-
-            -> This section will only be visible after the admin verification.
-            -> By pressing the "X" sign this section will get hidden
-            -> After form submission all input fields should be clear
-         -->
         <section class="my-3" id="iits-adminSection">
           <hr />
           <!-- Header -->
@@ -139,13 +115,6 @@
           <div
             class="row gap-3 flex-column flex-md-row align-items-center align-items-md-start mt-4"
           >
-            <!-- Filter sidebar -->
-            <!-- 
-                Filter task: [TASK]
-
-                -> #items will contain only such item thats type matches the selected radio button value.
-
-             -->
             <div class="filter col-md-3">
               <h4 class="brand-f">Filter By Item Category</h4>
               <!-- Radio field -->
@@ -188,20 +157,7 @@
               </div>
             </div>
             <!-- All items container -->
-            <!-- 
-                Items container task: [TASK]
-
-                -> At the the #items will contain all the items.
-                -> Items should be added dynamically from JS using the API
-                -> If the user selects any type #items will only show the selected type item.
-                -> If the user searched for any item #items should only show the item thats name matches the search value.
-                -> If no items found show "Nothing Found" message
-
-             -->
             <div class="col-9 row" id="iits-items">
-              <!-- 
-                    Handle this code block in JS and dynamically add values and render the item
-                 -->
               <div class="item col-md-6 col-lg-4 p-3" data-category="coffee">
                 <div class="card">
                   <div class="img-container">
@@ -217,20 +173,10 @@
                       Some quick example text to build on the card title and
                       make up the bulk of the card's content.
                     </p>
-
-                    <!-- 
-                        Add to Cart Btn task: [TASK]
-
-                        -> When the "Add to cart" button is pressed the #cart_counter should increment by 1
-
-                     -->
                     <button class="addToCartBtn btn w-100">Add to cart</button>
                   </div>
                 </div>
               </div>
-              <!-- 
-                Handle this code block in JS and dynamically add values and render the item
-                -->
             </div>
           </div>
         </section>
@@ -248,7 +194,7 @@
           >
         </p>
         <p class="fw-bold text-center mb-0" id="iits-developer">
-          ~(ADD YOUR NAME USING JS)~
+          ~(Sign in to view the developer)~
         </p>
       </div>
     </footer>
